@@ -53,7 +53,6 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
-import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "jackfruit")
 streamlit.write('Thanks for adding', add_my_fruit)
 #not work correectly but add for now
